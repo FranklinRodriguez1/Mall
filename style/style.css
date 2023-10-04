@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@1,700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display+SC:ital,wght@1,700&display=swap');
+*{
+    padding: 0; 
+    margin: 0;
+} 
+.img-fluid{
+    height: 80px !important;
+} 
+.navbar-nav{
+    width: 100%
+} 
+.navbar-brand{
+    font-family: 'Playfair Display SC', serif !important;
+} 
+.navbar-nav a {
+    font-family: "Montserrat";
+} 
+aside p{
+    letter-spacing: 10px;
+}
