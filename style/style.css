@@ -18,4 +18,16 @@
 } 
 aside p{
     letter-spacing: 10px;
+} 
+.carousel{ 
+    height: 95vh !important;
+    width: auto;
+    box-sizing: border-box; 
+} 
+.carousel-inner{
+    height: 100%; 
+    width: 100%;
+}
+.d-block{
+    width: fit-content;
 }
