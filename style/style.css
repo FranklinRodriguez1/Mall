@@ -3,31 +3,39 @@
 *{
     padding: 0; 
     margin: 0;
-} 
-.img-fluid{
-    height: 80px !important;
-} 
-.navbar-nav{
-    width: 100%
+}  
+/*inicio del hero*/
+.logo{
+    height: 80px !important; /*el logo del navbar*/
 } 
 .navbar-brand{
-    font-family: 'Playfair Display SC', serif !important;
+    font-family: 'Playfair Display SC', serif !important; /*el estilo del nombre de la empresa*/
 } 
 .navbar-nav a {
-    font-family: "Montserrat";
-} 
+    font-family: "Montserrat"; /*son los estilos de los accesos directos*/
+}  
+.navbar-nav a:hover{
+    border-bottom: 1px red solid; /*estilos hover para los accesos directos del menu*/
+    transition: ease-in-out 0.8s;
+}
+aside{ 
+    margin-top: 13.7vh;/*margin dinamico para que se pueda ver el aside */
+}
 aside p{
-    letter-spacing: 10px;
+    letter-spacing: 10px; /*el espaciado de las letras Bienviendo al mall*/
 } 
-.carousel{ 
-    height: 95vh !important;
+.carousel{ /*tamaño del carrusel*/
+    height: 81.5vh !important;
     width: auto;
     box-sizing: border-box; 
 } 
-.carousel-inner{
+.carousel-inner{ /*el espaciado del contenedor de las imagenes*/
     height: 100%; 
     width: 100%;
 }
-.d-block{
-    width: fit-content;
+/*fin del hero*/ 
+.contenedor-card{
+    height: 60vh !important; 
+    align-items: center; 
+    gap: 3rem;
 }
