@@ -33,9 +33,22 @@ aside p{
     height: 100%; 
     width: 100%;
 }
-/*fin del hero*/ 
+/*fin del hero*/  
+/*inicio del area de reservas*/
 .contenedor-card{
     height: 60vh !important; 
     align-items: center; 
     gap: 3rem;
+} 
+.reserva-titulo{ /*esta clase funciona para todos los titulos de cada seccion*/
+    text-shadow: 1px 1px 8px black; 
+    font-family: "Montserrat"; 
+    font-weight: 900; 
+    
+}  
+/*fin de las reservas*/ 
+/*inicio de las redes */
+.box-post{
+    gap: 2rem;
 }
+/*fin de las redes sociales*/
