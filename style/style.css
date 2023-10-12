@@ -137,12 +137,15 @@ aside p{
     border-radius: 0.5rem;
     background-color: rgb(204, 204, 204);
 }
-/*Final Formulario*/
-/*Copyright*/
-
-.copyright{
-    height: 5vh;
-    padding: 1rem;
-    background-color: rgb(66, 66, 66);
+/*Final Formulario*/ 
+.container-fluid{
+    padding: 0 !important;
+} 
+.text-copy{
+    margin: 0 !important; 
+} 
+.copyright{ 
+    align-items: center !important;
+    height: 3rem; 
+    width: auto;
 }
-/*Final Copyright*/
