@@ -6,12 +6,11 @@ const boton = document.querySelector('.boton')
 setTimeout(()=>{
     box.style.marginBottom = "0" 
     box.style.transition = "1.25s" 
-    box.style.transition = "1s"
+    
 },3000) 
 
 
 //listeners 
 boton.addEventListener('click', ()=>{
     box.style.marginBottom = "-500px"
-    box.style.transition = "1.25s" 
 })

@@ -77,9 +77,10 @@ aside p{
     transition: 0.25s;
 
 }
-/*inicio del area de reservas*/
+/*inicio del area de reservas*/ 
+
 .contenedor-card{
-    height: 60vh !important; 
+    height: 65vh !important; 
     align-items: center; 
     gap: 3rem;
 } 
