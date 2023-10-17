@@ -118,7 +118,28 @@ aside p{
     text-decoration: none;
     font-size:larger;
 }
-/*fin de las redes sociales*/
+/*fin de las redes sociales*/ 
+/*footer*/ 
+.footer-msj{
+    position: relative !important; 
+    width: 100% !important; 
+    height: 22vh; 
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center !important;
+}  
+.footer-logo-msj{
+    display: flex; 
+    justify-content: space-evenly; 
+    align-items: center; 
+    width: 50% !important; 
+    gap: 3rem;
+} 
+.footer-logo-msj img{
+    float: left; 
+    height: 8rem; 
+    width: 6rem;
+}
 /*Formulario*/
 
 .formulario label{
@@ -149,4 +170,6 @@ aside p{
     align-items: center !important;
     height: 3rem; 
     width: auto;
-}
+}  
+
+/*fin del footer*/
