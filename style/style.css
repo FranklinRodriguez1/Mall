@@ -96,8 +96,10 @@ aside p{
 /*fin de las reservas*/ 
 /*inicio de las redes */
 .box-post{
-    gap: 2rem;
-}
+    gap: 2rem; 
+
+} 
+
 
 .card {
     margin: 1.5rem;
@@ -108,12 +110,15 @@ aside p{
     transition: 250ms ease-in-out;
 }
 
-.social-network{
-    flex-direction: row;
+.social-network{  
+    width: 12rem ; 
+    height: 3rem; 
+    display: flex;
+    justify-content: center !important; 
+    align-items: center !important; 
+    padding-top: 1rem;
 }
-.social-network img{
-    margin: 0.8rem;
-}
+
 .social-network a{
     text-decoration: none;
     font-size:larger;
@@ -125,21 +130,47 @@ aside p{
     width: 100% !important; 
     height: 22vh; 
     display: flex; 
-    justify-content: space-around; 
-    align-items: center !important;
+    justify-content: left;   
+    align-items: center; 
+    gap: 5rem;
+
 }  
 .footer-logo-msj{
-    display: flex; 
-    justify-content: space-evenly; 
+    display: flex;  
+    justify-content: left; 
     align-items: center; 
     width: 50% !important; 
-    gap: 3rem;
+    gap: 3rem; 
 } 
 .footer-logo-msj img{
     float: left; 
     height: 8rem; 
-    width: 6rem;
+    width: 7rem; 
+    margin-left: 1rem; 
+    filter: drop-shadow( 5px 5px 10px rgba(0, 0, 0, 0.726));
+}  
+.footer-direccion p, .footer-logo-msj p{
+    text-shadow: 1px 1px 10px black;
 }
+.card-footer{ 
+    width: 100%;
+    display: flex;  
+    justify-content: center; 
+    align-items: center;
+    flex-direction: row;
+} 
+.info-footer{
+    width: 50%;
+} 
+.footer-map{
+    width: 50%; 
+    height: 100% !important; 
+
+} 
+.footer-map iframe{
+    height: 100%;
+} 
+
 /*Formulario*/
 
 .formulario label{
@@ -154,7 +185,8 @@ aside p{
 }
 
 .formulario textarea{
-    width: 18vw;
+    width: 18vw; 
+    height: 4rem;
     padding: 0.3rem;
     border-radius: 0.5rem;
     background-color: rgb(204, 204, 204);
