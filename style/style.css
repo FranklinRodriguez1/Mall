@@ -198,7 +198,8 @@ width: 40vw;
     text-align: center; 
     color: rgb(255, 255, 255); 
     text-shadow: 1px 1px 10px rgb(27, 27, 26); 
-    font-family: "Montserrat";
+    font-family: "Montserrat"; 
+    border-radius: 5px;
 }
 
 .formulario input{  
@@ -209,7 +210,8 @@ width: 40vw;
     outline: none;
     text-indent: 0.5rem;
     border-radius: 0.5rem;
-    background-color: rgb(204, 204, 204);
+    background-color: rgb(204, 204, 204); 
+    box-shadow: -5px -1px 10px black;
 }
 
 .formulario textarea{  
@@ -220,7 +222,8 @@ width: 40vw;
     text-indent: 0.5rem;
     border-radius: 0.5rem;
     background-color: rgb(204, 204, 204); 
-    border: none;
+    border: none; 
+    box-shadow: -5px -1px 10px black;
 }
 /*Final Formulario*/ 
 .container-fluid{

@@ -144,22 +144,25 @@
             </div>
             <div class="card-footer pt-2">
                 <div class="info-footer  d-flex justify-content-center align-items-center ">
-                    <form id="formulario" class="formulario ">
+                    <form id="formulario" class="formulario d-flex flex-column gap-2">
                         <h4 class="fw-bolder">Contáctenos</h4>
-                        <input class="mt-1"  type="text" placeholder="Ingrese nombre" id="name">
-                        <input class="mt-1"  type="email" placeholder="Ingrese correo" id="email">
-                        <input class="mt-1"  type="tel" placeholder="Ingrese telefono" id="phone">
-                        <textarea class="mt-1" name="información" placeholder="Ingresa tu mensaje" id="info" resize = "none"></textarea>
-                        <a href="#" class="btn btn-primary d-flex justify-content-center ">Enviar</a>
+                        <input class=" nombre"  type="text" placeholder="Ingrese nombre" id="name">
+                        <input class=" email"  type="email" placeholder="Ingrese correo" id="email">
+                        <input class=" telefono"  type="tel" placeholder="Ingrese telefono" id="phone">
+                        <textarea class=" mensaje" name="información" placeholder="Ingresa tu mensaje" id="info" resize = "none"></textarea> 
+                        <div class="d-flex gap-5  justify-content-center w-100">
+                        <a href="#" class="btn  enviar btn-success d-flex  justify-content-center fw-bolder w-50">Enviar</a> 
+                        <a href="#" class="btn limpiar btn-danger d-flex justify-content-center fw-bolder w-50">Limpiar</a>  
+                        </div>
                     </form>
                 </div> 
             </div> 
         </div> 
-        <div class="footer-map mt-5 me-5">
+        <div class="footer-map mt-5 me-3">
             <div class="container-map d-flex flex-column ">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d41933.33167443607!2d34.99713957847803!3d-6.41979175333717!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1696884853157!5m2!1ses!2sco"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
                 <div class="map-addres mt-2">
-                    <p class="card-text text-light text-center">¡Estamos ansiosos por compartir contigo! Dirección: Carrera Falsa # Super Falso - Falso</p>
+                    <p class="card-text text-light text-center ">¡Estamos ansiosos por compartir contigo! Dirección: Carrera Falsa # Super Falso - Falso</p>
                 </div>
             </div>  
         </div>
