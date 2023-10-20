@@ -124,7 +124,18 @@ aside p{
     font-size:larger;
 }
 /*fin de las redes sociales*/ 
-/*footer*/ 
+/*footer*/  
+.footer section{
+    display: flex; 
+    width: 100%; 
+    height: 70vh;
+} 
+.footer-datos{ 
+    display: flex; 
+    flex-direction: column;
+    width: 70%; 
+    height: 50%;
+}
 .footer-msj{
     position: relative !important; 
     width: 100% !important; 
@@ -139,7 +150,7 @@ aside p{
     display: flex;  
     justify-content: left; 
     align-items: center; 
-    width: 50% !important; 
+    width: 100% !important; 
     gap: 3rem; 
 } 
 .footer-logo-msj img{
@@ -159,37 +170,59 @@ aside p{
     align-items: center;
     flex-direction: row;
 } 
-.info-footer{
-    width: 50%;
-} 
-.footer-map{
-    width: 50%; 
-    height: 100% !important; 
+.info-footer{  
+    justify-content: center;
+    align-items: center;
+    
+}  
+.footer-map{ 
+    height: 100%; 
+    
 
 } 
-.footer-map iframe{
-    height: 100%;
-} 
+.container-map{
+    height: 100%; 
+    justify-content: center;
+}  
+.container-map iframe{
+    height: 60%;
+}
+.map-addres{
+    padding: 0; 
+    margin: 0;
+}
 
 /*Formulario*/
-
-.formulario label{
-    margin: 0.5rem;
+.formulario{
+width: 40vw;
+} 
+.formulario h4{
+    text-align: center; 
+    color: rgb(255, 255, 255); 
+    text-shadow: 1px 1px 10px rgb(27, 27, 26); 
+    font-family: "Montserrat";
 }
 
-.formulario input{
-    width: 18vw;
-    padding: 0.3rem;
+.formulario input{  
+    height: 2rem;
+    width: 100%; 
+    background:  #ffc107;
+    border: none; 
+    outline: none;
+    text-indent: 0.5rem;
     border-radius: 0.5rem;
     background-color: rgb(204, 204, 204);
 }
 
-.formulario textarea{
-    width: 18vw; 
-    height: 4rem;
-    padding: 0.3rem;
+.formulario textarea{  
+    resize: none; 
+    outline: none;
+    width: 100%; 
+    height: 8rem; 
+    text-indent: 0.5rem;
     border-radius: 0.5rem;
-    background-color: rgb(204, 204, 204);
+    background-color: rgb(204, 204, 204); 
+    border: none;
 }
 /*Final Formulario*/ 
 .container-fluid{
