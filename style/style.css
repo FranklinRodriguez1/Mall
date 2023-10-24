@@ -32,6 +32,10 @@ aside p{
 .carousel-inner{ /*el espaciado del contenedor de las imagenes*/
     height: 100%; 
     width: 100%;
+} 
+.img-carrusel{
+    width: 100% !important; 
+    height: 36rem;
 }
 /*fin del hero*/  
 /*inicio de el aviso de cookies*/ 
