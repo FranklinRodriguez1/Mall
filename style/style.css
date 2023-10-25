@@ -132,14 +132,10 @@ aside p{
 .footer section{
     display: flex; 
     width: 100%; 
-    height: 70vh;
+    height: 75vh; 
+    position: relative;
 } 
-.footer-datos{ 
-    display: flex; 
-    flex-direction: column;
-    width: 70%; 
-    height: 50%;
-}
+
 .footer-msj{
     position: relative !important; 
     width: 100% !important; 
@@ -159,13 +155,15 @@ aside p{
 } 
 .footer-logo-msj img{
     float: left; 
-    height: 8rem; 
-    width: 7rem; 
+    height: 7rem; 
+    width: 5rem; 
     margin-left: 1rem; 
     filter: drop-shadow( 5px 5px 10px rgba(0, 0, 0, 0.726));
 }  
 .footer-direccion p, .footer-logo-msj p{
-    text-shadow: 1px 1px 10px black;
+    text-shadow: 1px 1px 10px black; 
+    width: 100%; 
+    text-align: center;
 }
 .card-footer{ 
     width: 100%;
@@ -187,7 +185,7 @@ aside p{
     justify-content: center;
 }  
 .container-map iframe{
-    height: 60%;
+    /* height: 60%; */
 }
 .map-addres{
     padding: 0; 
@@ -196,9 +194,10 @@ aside p{
 
 /*Formulario*/
 .formulario{
-width: 40vw;
+width: 40vw; 
+position: relative;
 } 
-.formulario h4{
+.formulario h4, .container-map h4{
     text-align: center; 
     color: rgb(255, 255, 255); 
     text-shadow: 1px 1px 10px rgb(27, 27, 26); 
@@ -207,7 +206,7 @@ width: 40vw;
 }
 
 .formulario input{  
-    height: 2rem;
+    height: 3rem;
     width: 100%; 
     background:  #ffc107;
     border: none; 
@@ -227,19 +226,21 @@ width: 40vw;
     border-radius: 0.5rem;
     background-color: rgb(204, 204, 204); 
     border: none; 
-    box-shadow: -5px -1px 10px black;
+    box-shadow: -5px -1px 10px black; 
+    
 }
 /*Final Formulario*/ 
 .container-fluid{
     padding: 0 !important;
 } 
 .text-copy{
-    margin: 0 !important; 
+    margin: 0 !important;  
 } 
 .copyright{ 
     align-items: center !important;
     height: 3rem; 
-    width: auto;
+    width: auto; 
+    position: relative;
 }  
 
 /*fin del footer*/
