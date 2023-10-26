@@ -160,11 +160,13 @@ aside p{
     margin-left: 1rem; 
     filter: drop-shadow( 5px 5px 10px rgba(0, 0, 0, 0.726));
 }  
-.footer-direccion p, .footer-logo-msj p{
+.footer-direccion p, .footer-logo-msj p, .container-map p{
     text-shadow: 1px 1px 10px black; 
     width: 100%; 
-    text-align: center;
-}
+    text-align: center; 
+    font-size: larger;
+} 
+
 .card-footer{ 
     width: 100%;
     display: flex;  
@@ -186,7 +188,8 @@ aside p{
 }  
 .container-map iframe{
     /* height: 60%; */
-}
+} 
+
 .map-addres{
     padding: 0; 
     margin: 0;
@@ -196,13 +199,31 @@ aside p{
 .formulario{
 width: 40vw; 
 position: relative;
+}  
+.alertas{
+    height: 3rem; 
+    width: 100%; 
+    overflow: hidden; 
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
 } 
+.aviso{  
+    transition: 1s;
+    margin-bottom: 100px;
+    height: 100% !important; 
+    width: 100%; 
+    font-family: "Montserrat"; 
+    text-align: center; 
+    position: relative;
+}
 .formulario h4, .container-map h4{
     text-align: center; 
     color: rgb(255, 255, 255); 
     text-shadow: 1px 1px 10px rgb(27, 27, 26); 
     font-family: "Montserrat"; 
-    border-radius: 5px;
+    border-radius: 5px; 
+    
 }
 
 .formulario input{  
@@ -228,7 +249,8 @@ position: relative;
     border: none; 
     box-shadow: -5px -1px 10px black; 
     
-}
+} 
+
 /*Final Formulario*/ 
 .container-fluid{
     padding: 0 !important;
@@ -243,4 +265,8 @@ position: relative;
     position: relative;
 }  
 
-/*fin del footer*/
+/*fin del footer*/ 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;}
