@@ -186,9 +186,7 @@ aside p{
     height: 100%; 
     justify-content: center;
 }  
-.container-map iframe{
-    /* height: 60%; */
-} 
+
 
 .map-addres{
     padding: 0; 
