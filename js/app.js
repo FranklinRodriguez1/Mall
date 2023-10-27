@@ -32,7 +32,8 @@ boton.addEventListener('click', ()=>{
 limpiar.addEventListener('click', (e)=>{ 
     e.preventDefault()
     formulario.reset() 
-    let alertaError = document.createElement("p"); 
+    let alertaError = document.createElement("p");   
+        alertaError.style.opacity = 0
         alertaError.classList.add( 
             "aviso",
             "text-light",
@@ -108,7 +109,6 @@ function validar(e){
     const exprecionReg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if(exprecionReg.test(email)){  
         estado = true
-        return
     }else{
         let alertaError = document.createElement("p"); 
         alertaError.classList.add( 
