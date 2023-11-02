@@ -12,7 +12,7 @@ const boton = document.querySelector('.boton')
     const limpiar = document.querySelector(".limpiar") 
     const alertas = document.querySelector(".alertas") 
     let estado = false 
-    
+    console.log(estado);
 //fin del formulario 
 
 
