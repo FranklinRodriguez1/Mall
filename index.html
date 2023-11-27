@@ -28,13 +28,10 @@
                                 <a class="nav-link active text-light fw-bolder fs-5" aria-current="page" href="#">Inicio</a>
                             </li>
                             <li class="nav-item me-3">
-                                <a class="nav-link text-light fw-bolder fs-5" href="#">Eventos</a>
-                            </li> 
-                            <li class="nav-item me-3">
-                                <a class="nav-link active text-light fw-bolder fs-5" aria-current="page" href="#">Sobre Nosotros</a>
+                                <a class="nav-link text-light fw-bolder fs-5" href="#box-event">Eventos</a>
                             </li> 
                             <li class="nav-item">
-                                <a class="nav-link active text-light fw-bolder fs-5" aria-current="page" href="#">Contactenos</a>
+                                <a class="nav-link active text-light fw-bolder fs-5" aria-current="page" href="#contactanos">Contactenos</a>
                             </li>
                         </ul>
                     </div>
@@ -96,8 +93,32 @@
                 </div>
             </div>
         </div>
-    </div> 
-    <div class="redes-sociales bg-warning bg-gradient">
+    </div>   
+    <h3 class="text-light text-center reserva-titulo pt-2 bg-gradient bg-warning p-0 m-0" id="box-event">Eventos</h3>
+    <div class=" bg-black bg-gradient box-event" > 
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagenes/Eventos/evento.png" class="d-block w-100 img-carrusel" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/Eventos/evento2.png" class="d-block w-100 img-carrusel" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/Eventos/evento3.jpg" class="d-block w-100 img-carrusel" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button  utton class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="redes-sociales bg-warning bg-gradient ">
         <h3 class="text-light reserva-titulo bg-warning bg-gradient text-center pt-2">Siguenos En Nuestras Historias En Redes Sociales</h3> 
         <div class="box-post d-flex flex-row bg-light d-flex justify-content-center bg-black bg-gradient">
             <div class="card bg-dark" style="width: 15rem; height: 20rem;">
@@ -118,7 +139,7 @@
                     <a href="#" class="btn btn-primary d-flex justify-content-center mt-4">Proximos Eventos</a>
                     <div class="social-network">
                         <img src="imagenes/Seccion redes sociales/facebook.png" class="pe-2" style="height: 4vh; width: 3vw;" alt="...">
-                        <a href="#" class="text-white ">Mall Example</a>
+                        <a href="https://www.facebook.com/" target="_blank" class="text-white ">Mall Example</a>
                     </div>  
                 </div> 
             </div>
@@ -135,7 +156,7 @@
             </div> 
         </div>
     </div>
-    <footer class="footer bg-warning bg-gradient">   
+    <footer class="footer bg-warning bg-gradient " id="contactanos">   
         <div class="footer-logo-msj w-100 pt-2 fw-bolder ">
             <img src="imagenes/logo-footer/logo footer.png" alt="" >  
             <p class="text-light" >¡Un nuevo horizonte comercial se abre! En nuestro mall, hay espacio y oportunidades para que tu tienda brille y crezca.</p>  

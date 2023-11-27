@@ -3,7 +3,13 @@
 *{
     padding: 0; 
     margin: 0;
-}  
+}   
+body, html{
+    scroll-behavior: smooth;
+} 
+#box-event,#contactanos{
+    scroll-margin-top:6ex;
+}
 /*inicio del hero*/
 .logo{
     height: 80px !important; /*el logo del navbar*/
@@ -94,18 +100,37 @@ aside p{
     font-weight: 900; 
     
 }
-#game{
-    height: 8vh;
+/*fin de las reservas*/  
+/* incion de la seccion eventos*/ 
+.box-event{
+    height: 70vh; 
+    width: 100%;
 }
-/*fin de las reservas*/ 
-/*inicio de las redes */
-.box-post{
-    gap: 2rem; 
-
+.box-event .card{
+    height: 50vh; 
+    width: 23vw; 
+    display: flex; 
+    flex-direction: column; 
+    border-radius: 10px; 
+    
+} 
+.box-event .card img{ 
+    border-top-right-radius:10px; 
+    border-top-left-radius: 10px;
+    width: 100%; 
+    height: 70%;
+}
+/*fin de la seccion eventos*/
+/*inicio de las redes */ 
+.redes-sociales{
+    position: relative; 
+    margin-top: 5rem;
 } 
 
-
-.card {
+.box-post{
+    gap: 2rem; 
+} 
+.card{
     margin: 1.5rem;
 }
 

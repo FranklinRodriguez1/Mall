@@ -51,7 +51,7 @@ limpiar.addEventListener('click', (e)=>{
     nombre.addEventListener('blur',validar)
     email.addEventListener('blur', validar)
     telefono.addEventListener('blur',validar)
-    mensaje.addEventListener ('blur',validar) 
+    mensaje.addEventListener ('blur',) 
     enviar.addEventListener('click', (e)=>{ 
         e.preventDefault()
         let nuevaPersona  = new persona(nombre.value, email.value, telefono.value, mensaje.value);  
