@@ -11,8 +11,7 @@ const boton = document.querySelector('.boton')
     const enviar = document.querySelector(".enviar") 
     const limpiar = document.querySelector(".limpiar") 
     const alertas = document.querySelector(".alertas") 
-    let estado = false 
-    console.log(estado);
+    let estado = false
 //fin del formulario 
 
 
@@ -51,7 +50,6 @@ limpiar.addEventListener('click', (e)=>{
     nombre.addEventListener('blur',validar)
     email.addEventListener('blur', validar)
     telefono.addEventListener('blur',validar)
-    mensaje.addEventListener ('blur',) 
     enviar.addEventListener('click', (e)=>{ 
         e.preventDefault()
         let nuevaPersona  = new persona(nombre.value, email.value, telefono.value, mensaje.value);  
@@ -83,7 +81,8 @@ class persona {
 }
 //funciones para el formulario
 function validar(e){   
-    if(e.target.value.trim() === ""){
+    if(e.target.value.trim() === ""){ 
+        estado = false
         let alertaError = document.createElement("p"); 
         alertaError.classList.add( 
             "aviso",
@@ -101,8 +100,20 @@ function validar(e){
     if(e.target.classList.contains("email") && e.target.value != ""){
         validarEmail(e.target.value.trim()); 
         
-    }if(estado === true && nombre != "" && telefono != "" && mensaje != "" ){
+    }
+    if(estado === false){
+        enviar.disabled = true 
+        
+    }  
+    if(nombre.value.trim() !== "" && telefono.value.trim !== "" && email.value.trim !== "" ){ 
+        validarEmail(email.value.trim()) 
+        if(nombre.value.trim() !== "" && telefono.value.trim() !== "" && estado === true){
         enviar.disabled = false
+        } 
+        else{
+            estado = false 
+            return
+        }
     }
 }  
     function validarEmail(email){ 
@@ -116,11 +127,13 @@ function validar(e){
             "text-light",
             "bg-danger",
             "fw-bolder",
-            "pt-1")
+            "pt-1") 
+        estado = false
         alertaError.textContent = `Correo electronico no es válido`; 
         alertas.appendChild(alertaError) 
         setTimeout(()=>{
             alertaError.remove()
-        },3000)
+        },3000) 
+        
     }
 }
